@@ -1,0 +1,112 @@
+[
+  {
+    "id": "H01",
+    "request": "Invoke `@hotdog` with no idea",
+    "pass_condition": "Shows the compact menu and invites an idea"
+  },
+  {
+    "id": "H02",
+    "request": "\u201cMake Hotdog waiting at a bus stop\u201d",
+    "pass_condition": "Infers IMAGE, selects PS2, grounds the new build, and creates one image without a style gate"
+  },
+  {
+    "id": "H03",
+    "request": "\u201cCanonical Hotdog turnaround, no scenery\u201d",
+    "pass_condition": "Uses CHARACTER; preserves the approved face/rear; reports actual white/alpha behavior correctly"
+  },
+  {
+    "id": "H04",
+    "request": "\u201cHotdog turns his back to the camera\u201d",
+    "pass_condition": "No mustard or face on rear; correct bun spacing, ears, and short limbs"
+  },
+  {
+    "id": "H05",
+    "request": "\u201cHotdog climbs three stairs\u201d",
+    "pass_condition": "Stable bipedal motion and bun depth; no added legs or quadrupedal transition"
+  },
+  {
+    "id": "H06",
+    "request": "\u201cHotdog picks up a small parcel\u201d",
+    "pass_condition": "Plausible paw reach and contact without stretching arms or detaching bun geometry"
+  },
+  {
+    "id": "H07",
+    "request": "\u201cA four-second idle, no storyboard\u201d",
+    "pass_condition": "Uses the smallest one-take workflow; handles provider duration limits explicitly"
+  },
+  {
+    "id": "H08",
+    "request": "\u201cSix-second model-viewer bumper, one full turn\u201d",
+    "pass_condition": "One continuous rotation, consistent front/rear, no resets, no required contact sheet"
+  },
+  {
+    "id": "H09",
+    "request": "\u201cClassic 15-second cinematic\u201d",
+    "pass_condition": "Frame approval precedes board; board approval precedes final packaging"
+  },
+  {
+    "id": "H10",
+    "request": "\u201cUse this approved frame for H3 I2V, skip the board\u201d",
+    "pass_condition": "Uses that frame as `image_url`; no redundant frame or board generation"
+  },
+  {
+    "id": "H11",
+    "request": "\u201cH3 R2V, use only the Hotdog sheet\u201d",
+    "pass_condition": "One reference, sheet first; no phantom slots, copied sheet layout, or invented opening-frame lock"
+  },
+  {
+    "id": "H12",
+    "request": "\u201cThree H3 T2V concepts, no references\u201d",
+    "pass_condition": "Three distinct concepts, self-contained identity, no upload instructions or reference tokens"
+  },
+  {
+    "id": "H13",
+    "request": "\u201cHotdog meets Chihuahua\u201d",
+    "pass_condition": "Independent character references and anatomy; no durag or bun transfer"
+  },
+  {
+    "id": "H14",
+    "request": "\u201cFix only the extra arm in shot 3\u201d",
+    "pass_condition": "Preserves correct shots and repairs the named failure"
+  },
+  {
+    "id": "H15",
+    "request": "\u201cContinue Board 2 after the parcel was delivered\u201d",
+    "pass_condition": "Carries delivery forward; does not reset parcel ownership or replay setup"
+  },
+  {
+    "id": "H16",
+    "request": "\u201cPS2 GTA San Andreas street scene\u201d",
+    "pass_condition": "Uses original PS2 evidence for the named game while retaining Hotdog identity"
+  },
+  {
+    "id": "H17",
+    "request": "\u201cPS1 Hotdog loading screen\u201d",
+    "pass_condition": "Explicit adjacent profile, appropriate grounding, no silent replacement of base canon"
+  },
+  {
+    "id": "H18",
+    "request": "\u201cUse the bundled Late-Z style\u201d",
+    "pass_condition": "Correctly states it is not included; does not route to an inherited anime asset"
+  },
+  {
+    "id": "H19",
+    "request": "\u201cNo music\u201d then \u201ccontinue\u201d",
+    "pass_condition": "Audio intent persists; effects/ambience remain available without adding a score"
+  },
+  {
+    "id": "H20",
+    "request": "\u201cPrompt only, under 3500 characters\u201d",
+    "pass_condition": "No generation; final delivered prompt is measured after edits"
+  },
+  {
+    "id": "H21",
+    "request": "Search unavailable",
+    "pass_condition": "Honest historical-profile fallback; no fabricated sources; useful output still delivered"
+  },
+  {
+    "id": "H22",
+    "request": "Isolated install with only Hotdog package",
+    "pass_condition": "All internal references/assets resolve without another engine installed"
+  }
+]

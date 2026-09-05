@@ -1,0 +1,49 @@
+name: Release
+on:
+  push:
+    branches: [main]
+    paths: [hotdog/VERSION]
+    tags: ['v*']
+  release:
+    types: [published]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: hotdog-release
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.event_name != 'workflow_dispatch' || github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: ${{ github.event.release.tag_name || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - run: python3 -m pip install -r requirements-dev.txt
+      - name: Validate, test and build exact release
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          version="$(cat hotdog/VERSION)"
+          tag="v$version"
+          if [ "$EVENT_NAME" = release ]; then tag="$RELEASE_TAG"; fi
+          if [ "$REF_TYPE" = tag ]; then tag="$REF_NAME"; fi
+          python3 scripts/validate.py --tag "$tag"
+          test -f "docs/releases/$tag.md"
+          python3 -m unittest discover -s tests -v
+          python3 scripts/package.py --tag "$tag"
+          printf 'RELEASE_TAG=%s\n' "$tag" >> "$GITHUB_ENV"
+      - name: Publish ZIP and checksum
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: bash scripts/release.sh

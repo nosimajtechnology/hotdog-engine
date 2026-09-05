@@ -1,0 +1,14 @@
+interface:
+  display_name: Hotdog
+  short_description: PS2 Hotdog scenes, images, loops, and video prompts
+  default_prompt: Use $hotdog to make a PS2 scene where Hotdog waits for an impossibly
+    small bus.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
