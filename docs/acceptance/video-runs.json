@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-05",
+  "note": "Actual provider requests and results; provider-expanded claims are not validation findings.",
+  "t2v": {
+    "input": {
+      "aspect_ratio": "4:3",
+      "duration": 6,
+      "prompt": "Create a six-second 4:3 original 2003-2004 PS2 game cutscene. One small upright bipedal canine integrated into a vertical hot dog: two elongated golden-brown bun halves with pale inner edges flank a dull brick-red sausage with rounded tip above the forehead. Tan face emerges at upper front between buns, broad cream cheeks and muzzle, dark faceted nose, muted gray-violet eyes, gentle closed mouth. Head stays within bun silhouette, small tan triangular ear tips behind upper bun. One yellow sinuous mustard stripe on front below face. Exactly two short tan arms with pale paw tips and two short tan legs with chunky pale feet and simple toe marks. Rear plain red core between bun backs, tiny pale lower nub, no rear face or mustard. All bun geometry and limb attachment points persist. Dog's Life original PS2 construction lineage: angular modest mesh, low-resolution painted diffuse maps, repeated stone texture, baked/vertex lighting, simple shadows, modular courtyard, no modern PBR, fur, bread pores or cinematic depth of field. One continuous level profile shot, camera fixed. Hotdog faces right beside three very shallow wide stone steps, each step only one-quarter of his short lower-leg height. From 0-5 seconds he climbs the three steps using deliberate small alternating bipedal steps, short arms resting near his sides; bun torso tilts slightly without stretching. From 5-6 seconds he stands upright at the top. Keep two feet total, stable compact limbs and bun depth. No extra limbs, quadrupedal switch, hopping, human fingers, detached costume, duplicate characters, HUD, text or logo. No music or dialogue; soft footsteps and courtyard wind only.",
+      "prompt_expansion_mode": "balanced",
+      "resolution": "480P"
+    },
+    "response": {
+      "status": "completed",
+      "endpoint_id": "minimax/h3-max/text-to-video",
+      "request_id": "01a06ef2-6db3-7de3-a209-12b289ff4a88",
+      "result": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa92349/6z4b3kN5nH21EqoENDwJw_minimax-h3.mp4",
+          "content_type": "video/mp4",
+          "file_name": "6z4b3kN5nH21EqoENDwJw_minimax-h3.mp4",
+          "file_size": 2954395
+        },
+        "expanded_prompt": "integrated_multimodal_description: [Shot 1] Cinematic, 3D CG, 4:3 aspect ratio, styled as an original 2003-2004 PlayStation 2 game cutscene. The scene is a static, level profile shot of a modular stone courtyard with low-resolution painted diffuse maps and a repeated gray stone texture. The lighting is baked vertex lighting with simple, hard-edged shadows and no cinematic depth of field. Centered in the frame is a small bipedal canine (S1) integrated into a vertical hot dog. S1 has a tan face with broad cream cheeks, a muzzle, a dark faceted nose, and muted gray-violet eyes with a gentle closed mouth. The head is flanked by two elongated golden-brown bun halves with pale inner edges; a dull brick-red sausage with a rounded tip extends above the forehead. A single yellow sinuous mustard stripe runs down the front of the bun below the face. S1 has two short tan arms with pale paw tips and two short tan legs with chunky pale feet. The rear of the character is a plain red core between the bun backs with a tiny pale lower nub. S1 faces right, standing beside three very shallow, wide stone steps, each step measuring only one-quarter of the height of S1's lower leg. From 0 to 5 seconds, S1 climbs the three steps using deliberate, alternating bipedal steps, with short arms resting near the sides and the bun torso tilting slightly without stretching or warping. From 5 to 6 seconds, S1 reaches the final step and stands perfectly upright and still. The mesh remains angular and modest throughout, maintaining the exact proportions and limb attachment points of a mid-2000s game character.\n\noverall_soundscape: The soundscape consists of a thin, looped ambient wind noise typical of a quiet game courtyard. Each bipedal step produces a soft, low-fidelity \"thump\" sound as the chunky pale feet make contact with the stone surfaces.\n\nnon_diegetic_music: N/A",
+        "timings": {
+          "inference": 0.7145152168814093
+        }
+      }
+    }
+  },
+  "r2v": {
+    "input": {
+      "aspect_ratio": "4:3",
+      "duration": 6,
+      "prompt": "Image 1 is the only reference: the approved Hotdog character sheet. Its six views show one character. Use it as the authority for his face, proportions, anatomy, bun and sausage construction, palette, painted textures and PS2 mesh treatment. Do not reproduce the sheet, its white background, panel layout or multiple copies. The sheet supplies identity, not a prescribed opening frame.\n\nCreate a six-second, 4:3 model-viewer bumper in one continuous take. One Hotdog stands centered against a plain muted slate-blue background with a simple matte floor and a restrained contact shadow. Frame his entire body with comfortable space above the sausage tip and below both feet. Fixed camera at mid-body height, level horizon, mild perspective, constant framing and scale.\n\nPreserve the compact upright canine integrated into a vertical hot dog: two golden-brown bun halves with pale inner edges around a dull brick-red sausage, its rounded tip above the forehead; tan face, broad cream cheeks and muzzle, dark faceted nose, muted gray-violet eyes and gentle closed mouth. Keep the head within the bun silhouette, small tan ear tips behind the upper bun, one yellow sinuous mustard stripe on the front below the face, exactly two short tan arms with pale paw tips, and exactly two short tan legs with chunky pale feet. Preserve bun depth, spacing and limb attachments throughout. The back has plain red sausage between the bun backs and a tiny pale lower nub, with no rear face or mustard. Hidden limbs stay naturally occluded.\n\nFrom 0.0 to 6.0 seconds, rotate the entire character exactly 360 degrees clockwise as viewed from above, around his fixed vertical center axis, at a uniform speed. Begin facing the camera and complete the single full revolution precisely back at the same front-facing pose. This is a rigid model-viewer turn: arms, legs, head and expression hold their neutral pose while the whole model rotates. Keep the camera and lighting stationary. No angle holds, easing, snapping, reversal, second turn, walking, bobbing or camera orbit. The ending matches the opening for a continuous loop.\n\nUse original 2003-2004 PS2 asset construction: visible modest polygon planes, low-resolution painted diffuse maps, softly filtered texture detail, simple restrained lighting and broad shading. Keep bun and paw edges mildly angular. No modern fur, bread pores, glossy PBR materials, subdivision smoothing, cinematic depth of field, heavy bloom, PS1 wobble or added grain. No extra anatomy, detached buns, costume substitutions, props, text, logos, interface or watermark.\n\nAudio: silence; no music, dialogue or sound effects.",
+      "prompt_expansion_mode": "balanced",
+      "reference_image_urls": [
+        "https://raw.githubusercontent.com/nosimajtechnology/hotdog-engine/39c96344377a627bc350d8cc89ddd6eceb5b5ae2/hotdog/assets/hotdog-character-sheet-v1.png"
+      ],
+      "resolution": "480P"
+    },
+    "response": {
+      "status": "completed",
+      "endpoint_id": "minimax/h3-max/reference-to-video",
+      "request_id": "01a06ef6-0d19-7d21-aa11-5d457b3d46ea",
+      "result": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa92378/lokW6Vt4lhWdjtuXYpFzk_minimax-h3.mp4",
+          "content_type": "video/mp4",
+          "file_name": "lokW6Vt4lhWdjtuXYpFzk_minimax-h3.mp4",
+          "file_size": 1606983
+        },
+        "expanded_prompt": "subject_definitions:\n<Subject 1> is the Hotdog character from <Picture 1>, a compact upright canine integrated into a vertical hot dog, featuring golden-brown bun halves with pale inner edges, a dull brick-red sausage with a rounded tip, a tan face with broad cream cheeks, dark faceted nose, muted gray-violet eyes, a single sinuous yellow mustard stripe on the front, two short tan arms with pale paw tips, and two short tan legs with chunky pale feet.\n\nsummary:\n[reference generation] The target video shows <Subject 1> performing a rigid 360-degree clockwise rotation in a model-viewer style presentation against a muted slate-blue background.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - The character's proportions, PS2-era low-poly mesh, painted textures, and anatomy from <Picture 1> are maintained throughout the rotation.\n\ndetailed_description:\nThe overall style is a faithful reproduction of early 2000s (PS2-era) 3D game assets, characterized by visible polygon planes, low-resolution painted diffuse maps, softly filtered texture detail, and simple restrained lighting with broad shading. The visual quality avoids modern PBR materials, subdivision smoothing, or cinematic depth of field, maintaining mildly angular edges on the bun and paws.\n\n[Shot 1] The video opens with <Subject 1> standing centered in a 4:3 frame against a plain, muted slate-blue background with a simple matte floor and a restrained contact shadow. The camera is a Static Shot at mid-body height with a level horizon and mild perspective, providing comfortable headspace above the sausage tip and space below the feet. From 0.0 to 6.0 seconds, <Subject 1> rotates exactly 360 degrees clockwise around its fixed vertical center axis at a uniform speed. The character maintains a rigid neutral pose: arms and legs are stationary, the head is fixed, and the facial expression remains neutral. As <Subject 1> turns, the side views reveal the depth of the buns and the placement of the limbs, and the rear view shows the plain red sausage between the bun backs with a tiny pale lower nub and no mustard. The rotation is perfectly linear with no easing or snapping, completing the full revolution at 6.0 seconds to return precisely to the initial front-facing pose, creating a seamless loop. The lighting and camera remain entirely stationary throughout the duration.\n\noverall_soundscape:\nSilence.\n\nnon_diegetic_music:\nN/A",
+        "seed": 490878805,
+        "timings": {
+          "inference": 1.2331214919977356
+        }
+      }
+    }
+  },
+  "i2v": {
+    "input": {
+      "duration": 6,
+      "image_url": "https://raw.githubusercontent.com/nosimajtechnology/hotdog-engine/344f4be692bbe5714649f8ab9b948455f0c67acc/docs/acceptance/continuation-frame.png",
+      "prompt": "Begin exactly from the input scene frame. Preserve this single Hotdog's face, eye size, compact upright canine proportions, short tan arms and short legs, pale paws, golden bun halves, central brick-red sausage and front mustard. Keep the head inside the bun silhouette. Preserve the PS2 low-poly painted diffuse rendering, blue door, plaster wall, doorstep, crates and courtyard geography and lighting. The parcel with one blue tape band has ALREADY been delivered on the doorstep; keep it there throughout. Hotdog's two paws remain empty at his sides. Six seconds, one fixed medium-wide profile shot, no camera cuts or motion. From 0-3 seconds the blue door slowly opens inward away from the parcel, revealing a simple dark interior. Hotdog stays planted in profile facing the doorway, gently lifting his chin to look into the opening. From 3-6 seconds he remains still and waits, with one subtle blink. Exactly two short arms and two short legs, no extra limbs, stretched arms or walking. No parcel reset, grasp, handoff, movement or duplication. No added person, no face on rear, no scene redesign, no photographic depth of field or PBR. No music, dialogue or narration; quiet courtyard wind and a wooden door creak only.",
+      "prompt_expansion_mode": "balanced",
+      "resolution": "480P"
+    },
+    "response": {
+      "status": "completed",
+      "endpoint_id": "minimax/h3-max/image-to-video",
+      "request_id": "01a06ef9-534f-7001-9f3b-97242397bc16",
+      "result": {
+        "video": {
+          "url": "https://v3b.fal.media/files/b/0aa9238e/7wKYrZDyQTg3UrnK3QRnO_minimax-h3.mp4",
+          "content_type": "video/mp4",
+          "file_name": "7wKYrZDyQTg3UrnK3QRnO_minimax-h3.mp4",
+          "file_size": 2342403
+        },
+        "expanded_prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] This is a 3D CG animation in a low-poly, PS2-era painted diffuse rendering style. The scene opens on <Picture 1>, a medium-wide profile shot. A stylized Hotdog character—featuring a compact upright canine body with a face and eyes nestled inside golden bun halves, a central brick-red sausage, and a streak of yellow mustard on the front—stands on a gravel courtyard. He has two short tan arms and two short legs with pale paws. He stands in profile, facing a blue wooden door set into a white textured plaster wall. To the right, on a gray stone doorstep, sits a cardboard parcel secured with a single blue tape band. The background consists of a simple courtyard with wooden crates, a white picket fence, and distant green hills under a clear sky. The camera is a Static Shot throughout the entire duration. From 00:00.000 to 00:03.000, the blue door slowly swings open inward, moving away from the parcel to reveal a simple, dark, featureless interior. The Hotdog character remains planted on the ground, his paws empty at his sides, gently lifting his chin upward to peer into the dark opening. From 00:03.000 to 00:06.000, the character remains completely still in his profile stance, waiting, with a single, subtle blink of his eyes. The parcel remains undisturbed on the doorstep. The low-poly geometry, flat lighting, and diffuse textures are preserved without any photographic depth of field or PBR effects.\n\noverall_soundscape: A quiet, ambient outdoor atmosphere with the sound of a light, hollow courtyard wind. As the door opens, a distinct, slow wooden creak is heard, echoing the movement of the door hinges.\n\nnon_diegetic_music: N/A",
+        "timings": {
+          "inference": 0.7355177209974499
+        }
+      }
+    }
+  }
+}

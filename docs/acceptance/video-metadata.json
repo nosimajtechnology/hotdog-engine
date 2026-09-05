@@ -1,0 +1,65 @@
+{
+  "t2v": {
+    "sha256": "b3ab38d075436294ca23c21cc47c7acb52acc25f160e068c5b509b7baace1822",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "duration": "6.583333"
+        },
+        {
+          "codec_type": "audio",
+          "duration": "6.592000"
+        }
+      ],
+      "format": {
+        "duration": "6.592000"
+      }
+    }
+  },
+  "r2v": {
+    "sha256": "20408f6c1244403954ab69eb315a604b247a4292d996865856f62f11c7edb6d9",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "duration": "6.583333"
+        },
+        {
+          "codec_type": "audio",
+          "duration": "6.592000"
+        }
+      ],
+      "format": {
+        "duration": "6.592000"
+      }
+    }
+  },
+  "i2v": {
+    "sha256": "6c896bd0006e07ed8f060d17a2b2e5fb6fc7f9f7ce3a3ffe8d605602e2c8b60b",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_type": "video",
+          "width": 640,
+          "height": 480,
+          "duration": "6.583333"
+        },
+        {
+          "codec_type": "audio",
+          "duration": "6.592000"
+        }
+      ],
+      "format": {
+        "duration": "6.592000"
+      }
+    }
+  }
+}
